@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+       body{
+           position: relative;
+       }
+    </style>
+
+    
     
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="100" tabindex="0">
+    <p id = "home"></p>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light py-3">
-        
-        <div class="container">
-            <a href="#" class="navbar-brand">sunmar express</a>
+        <div class="container py-4">
+            <nav id="navbar" class="navbar navbar-light bg-light  fixed-top navbar-expand-lg p-3 px-5 " style="font-family: Josefin Sans; font-size: large; font-weight: bold;">
+            <a href="#" class="navbar-brand" style="font-size: xx-large;">sunmar express</a>
 
             <button 
             class="navbar-toggler" 
@@ -43,10 +53,12 @@
                 </ul>
                 <a class="btn btn-danger btn-sm" href="#" role="button">LOG IN</a>
             </div>
-        </div>
-   
+      
+       
     </nav>
-
+</div>
+   
+    
     <!-- Showcase -->
         <section class="text-dark bg-light p-5 text-center text-sm-start">
             <div class="container">
@@ -63,33 +75,109 @@
                 </div>
             </div>
         </section>
-        <section class="text-dark bg-dark p-5 text-center text-sm-start">
-            <div class="container">
-                <div class="d-sm-flex align-items-center justify-content-between">
-                    <div>
-                        <h4><span class="text-primary">successful</span> </h4>
-                        <p class="lead my-4">
-                            <span class="text-light">Franchising Company that provide services like E-load, Bills Payment, Airline, Bus, Remittance, ATM Withdrawal, Insurance etc.</span> 
-                        </p>
-                        <h4><span class="text-primary">successful</span> </h4>
-                        <p class="lead my-4">
-                            <span class="text-light">Franchising Company that provide services like E-load, Bills Payment, Airline, Bus, Remittance, ATM Withdrawal, Insurance etc.</span> 
-                        </p>
-                        <h4><span class="text-primary">successful</span> </h4>
-                        <p class="lead my-4">
-                            <span class="text-light">Franchising Company that provide services like E-load, Bills Payment, Airline, Bus, Remittance, ATM Withdrawal, Insurance etc.</span> 
-                        </p>
-                       
+       
+        <!-- Boxes -->
+        <section class="text-light bg-dark p-5  text-sm-start">
+            <div class="row text-center py-4" id="services">
+                <h5>Our Services</h5>
+            </div>
+            <div class="container justify-content-between ">
+                <div class="row py-5">
+                    <div class="col">
+                        <h3>Electronic Loading</h3>
+                        <p>Be able to dispense over 300 types and 
+                            denominations of e-loads and 
+                            e-PINS , prepaid internet, online gaming,
+                            satellite cards and other types 
+                            of prepaid products.</p>
                     </div>
+                    <div class="col px-5"><img class="img-fluid w-50 " src="load-logo.jpg" alt=""/></div>
                 </div>
+                <div class="row py-5">
+                    <div class="col">
+                        <h3>Bills Payment</h3>
+                        <p>SunmarExpress Bills Payment Center 
+                            provides to the public a reliable,
+                            dependable and convenient bills payment 
+                            service.  </p>
+                    </div>
+                    <div class="col px-5"><img class="img-fluid w-50 " src="load-logo.jpg" alt=""/></div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col">
+                            <h3>Airline Ticketing</h3>
+                            <p>Book your flight in one go to over 70 
+                                local and international destinations!</p>
+                        </div>
+                        <div class="col px-5"><img class="img-fluid w-50 " src="load-logo.jpg" alt=""/></div>
+                    </div>   
             </div>
         </section>
+        
+    <!-- Carousel -->
+    <section class="text-light bg-dark p-5  text-sm-start">
+        <div class="row text-center py-4" id="gallery">
+            <h5>Gallery</h5>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="carouselExampleInterval" class="carousel slide"  data-bs-ride="carousel" >
+                        <div class="carousel-inner" role="listbox">
+                          <div class="carousel-item active" data-bs-interval="4000">
+                            <img  src="payment.jpg" class="d-block w-100" alt="..." >
+                            <div class="carousel-caption">
+                                <h1>Offers </h1>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="4000">
+                            <img  src="airline.jpg" class="d-block w-100" alt="...">
+                          </div>
+            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
 
+            </div>
 
-
+        </div>
+        
+    </section>
+    
+   
                         
-                        
+    <script>
+    window.addEventListener('DOMContentLoaded', event => 
+    {
 
+ // Activate Bootstrap scrollspy on the main nav element
+    const navbar = document.body.querySelector('#navbar');
+    if (navbar) {
+    new bootstrap.ScrollSpy(document.body, 
+    {
+    target:'#navbar', offset: 74,
+    });
+                }
+    });
+//Refresh
+    var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+    dataSpyList.forEach(function (dataSpyEl) {
+    bootstrap.ScrollSpy.getInstance(dataSpyEl)
+    .refresh()
+})
+
+var scrollSpyContentEl = document.getElementById('content')
+var scrollSpy = bootstrap.ScrollSpy.getOrCreateInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
+    </script>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
